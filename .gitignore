@@ -1,4 +1,5 @@
 *.class
+**/.gradle
 **/build
 **/target
 **/test-output
