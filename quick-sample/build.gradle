@@ -1,0 +1,24 @@
+apply plugin: 'java'
+apply plugin: 'maven'
+
+group = 'by.stqa.pft.quick'
+version = '1.0.0'
+
+description = """"""
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+
+repositories {
+        
+     maven { url "http://repo.maven.apache.org/maven2" }
+}
+dependencies {
+    compile group: 'org.testng', name: 'testng', version:'6.10'
+    compile group: 'ru.stqa.selenium', name: 'webdriver-factory', version:'3.0'
+}
+
+test{
+    useTestNG()
+}

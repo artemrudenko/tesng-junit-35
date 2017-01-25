@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- ====================================================================== -->
+<!-- Ant build file (http://ant.apache.org/) for Ant 1.6.2 or above.        -->
+<!-- ====================================================================== -->
+
+<project name="quick-sample" default="package" basedir=".">
+
+  <!-- ====================================================================== -->
+  <!-- Import maven-build.xml into the current project                        -->
+  <!-- ====================================================================== -->
+
+  <import file="maven-build.xml"/>
+  
+  <!-- ====================================================================== -->
+  <!-- Help target                                                            -->
+  <!-- ====================================================================== -->
+
+  <target name="help">
+    <echo message="Please run: $ant -projecthelp"/>
+  </target>
+  <taskdef resource="testngtasks" classpathref="build.test.classpath"/>
+
+  <target name="testng"
+          depends="compile-tests"
+          description="Run the test cases">
+    <mkdir dir="${maven.test.reports}"/>
+    <testng haltonfailure="true">
+      <sysproperty key="basedir" value="."/>
+      <classpath>
+        <path refid="build.test.classpath"/>
+        <pathelement location="${maven.build.outputDir}"/>
+        <pathelement location="${maven.build.testOutputDir}"/>
+      </classpath>
+      <classfileset dir="${maven.build.testOutputDir}">
+        <include name="**/Test*.class"/>
+        <include name="**/*Test.class"/>
+        <include name="**/*TestCase.class"/>
+        <exclude name="**/*Abstract*Test.class"/>
+      </classfileset>
+    </testng>
+  </target>
+</project>
