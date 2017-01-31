@@ -7,6 +7,7 @@ import static org.hamcrest.Matchers.equalTo;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 
 import java.io.File;
 import java.io.IOException;
@@ -60,6 +61,16 @@ public class CreateNewFileTests {
     File file = new File(temp.toString(), getFileName());
     file.createNewFile();
     assertThat(file.length(), is(equalTo(0L)));
+  }
+
+  @Test(groups = "positive")
+  public void testCreatesNewFileSoft() throws IOException {
+    SoftAssert assrt = new SoftAssert();
+    System.out.println("Soft: createNewFile creates an empty file");
+    File file = new File(temp.toString(), getFileName());
+    assrt.assertTrue(file.createNewFile());
+    assrt.assertEquals(file.length(), 0);
+    assrt.assertAll();
   }
 
   @Test(groups = "negative")
