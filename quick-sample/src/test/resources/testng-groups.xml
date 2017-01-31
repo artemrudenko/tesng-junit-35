@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="GroupsSuite" verbose="1">
+  <test name="Lesson1">
+    <groups>
+      <run>
+        <include name="positive"/>
+        <exclude name="broken"/>
+      </run>
+    </groups>
+    <packages>
+      <package name="by.stqa.pft.lesson1"/>
+    </packages>
+  </test>
+</suite>

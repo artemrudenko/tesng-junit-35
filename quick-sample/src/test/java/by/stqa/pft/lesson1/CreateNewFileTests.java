@@ -15,19 +15,28 @@ import java.nio.file.Path;
  */
 public class CreateNewFileTests {
   Path temp;
-  @BeforeClass
+
+  @BeforeClass(alwaysRun = true)
   public void init() throws IOException {
     System.out.println("Preparing temp directory...");
     temp = Files.createTempDirectory("TestNGHomeWork_");
   }
 
-  @AfterClass
+  @AfterClass(alwaysRun = true)
   public void clean(){
     System.out.println("Removing temp directory...");
     deleteDirectory(temp.toFile());
   }
 
-  @Test
+  @Test(groups = {"positive", "broken"})
+  public void testPositiveBroken() throws IOException {
+    System.out.println("createNewFile positive and broken(to be skipped)");
+    File file = new File(temp.toString(), getFileName());
+    file.createNewFile();
+    throw new Error("Something wrong!");
+  }
+
+  @Test(groups = "positive")
   public void testCallCreatesFile() throws IOException {
     System.out.println("createNewFile should create new file");
     File file = new File(temp.toString(), getFileName());
@@ -35,14 +44,14 @@ public class CreateNewFileTests {
     Assert.assertTrue(file.exists());
   }
 
-  @Test
+  @Test(groups = "positive")
   public void testCallReturnsTrue() throws IOException {
     System.out.println("createNewFile returns true if file is new");
     File file = new File(temp.toString(), getFileName());
     Assert.assertTrue(file.createNewFile());
   }
 
-  @Test
+  @Test(groups = "positive")
   public void testCreatesEmptyFile() throws IOException {
     System.out.println("createNewFile creates an empty file");
     File file = new File(temp.toString(), getFileName());
@@ -50,7 +59,7 @@ public class CreateNewFileTests {
     Assert.assertEquals(file.length(), 0, "An empty file expected to be created!");
   }
 
-  @Test
+  @Test(groups = "negative")
   public void testCallReturnsFalseIfExists() throws IOException {
     System.out.println("createNewFile returns false if file isn't new");
     String f_name = getFileName();
@@ -60,8 +69,16 @@ public class CreateNewFileTests {
     Assert.assertFalse(file2.createNewFile());
   }
 
-  @Test(expectedExceptions = IOException.class)
+  @Test(groups = "negative", expectedExceptions = IOException.class)
   public void testRaisesIOExceptionIfPathWrong() throws IOException {
+    System.out.println("createNewFile raises IOException if path is wrong");
+    File file = new File(temp.toString(), "12314//\\\\*.txt");
+    file.createNewFile();
+  }
+
+  @Test(groups = {"negative", "broken"})
+  public void testNegativeBroken() throws IOException {
+    System.out.println("createNewFile negative and broken(to be skipped)");
     File file = new File(temp.toString(), "12314//\\\\*.txt");
     file.createNewFile();
   }
