@@ -1,9 +1,9 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
-<suite name="HomeWork" verbose="1" >
-    <test name="Lesson1">
-        <classes>
-            <class name="by.stqa.pft.lesson1.CreateNewFileTests" />
-        </classes>
-    </test>
+<suite name="HomeWork" verbose="1">
+  <test name="Lesson1">
+    <classes>
+      <class name="by.stqa.pft.lesson1.CreateNewFileTests"/>
+    </classes>
+  </test>
 </suite>
