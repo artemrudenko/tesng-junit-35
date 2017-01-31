@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel>
+      <module name="quick-sample-junit_main" target="1.8" />
+      <module name="quick-sample-junit_test" target="1.8" />
+      <module name="quick-sample_main" target="1.8" />
+      <module name="quick-sample_test" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
