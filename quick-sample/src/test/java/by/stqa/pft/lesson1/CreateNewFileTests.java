@@ -1,6 +1,10 @@
 package by.stqa.pft.lesson1;
 
-import org.testng.Assert;
+import static org.hamcrest.CoreMatchers.is;
+import static org.hamcrest.MatcherAssert.assertThat;
+import static org.hamcrest.Matchers.equalTo;
+import static org.testng.Assert.assertTrue;
+
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -37,18 +41,18 @@ public class CreateNewFileTests {
   }
 
   @Test(groups = "positive")
+  public void testCallReturnsTrue() throws IOException {
+    System.out.println("createNewFile returns true if file is new");
+    File file = new File(temp.toString(), getFileName());
+    assertThat(file.createNewFile(), is(equalTo(true)));
+  }
+
+  @Test(groups = "positive")
   public void testCallCreatesFile() throws IOException {
     System.out.println("createNewFile should create new file");
     File file = new File(temp.toString(), getFileName());
     file.createNewFile();
-    Assert.assertTrue(file.exists());
-  }
-
-  @Test(groups = "positive")
-  public void testCallReturnsTrue() throws IOException {
-    System.out.println("createNewFile returns true if file is new");
-    File file = new File(temp.toString(), getFileName());
-    Assert.assertTrue(file.createNewFile());
+    assertThat(file.exists(), is(equalTo(true)));
   }
 
   @Test(groups = "positive")
@@ -56,7 +60,7 @@ public class CreateNewFileTests {
     System.out.println("createNewFile creates an empty file");
     File file = new File(temp.toString(), getFileName());
     file.createNewFile();
-    Assert.assertEquals(file.length(), 0, "An empty file expected to be created!");
+    assertThat(file.length(), is(equalTo(0L)));
   }
 
   @Test(groups = "negative")
@@ -66,7 +70,7 @@ public class CreateNewFileTests {
     File file = new File(temp.toString(), f_name);
     file.createNewFile();
     File file2 = new File(temp.toString(), f_name);
-    Assert.assertFalse(file2.createNewFile());
+    assertThat(file2.createNewFile(), is(equalTo(false)));
   }
 
   @Test(groups = "negative", expectedExceptions = IOException.class)
