@@ -3,6 +3,9 @@
 **/build
 **/target
 **/test-output
+**/.idea/
+**/.config
+**/.settings
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
 
