@@ -44,7 +44,7 @@ public class CreateNewFileTests {
   public void testCallReturnsTrue() throws IOException {
     System.out.println("createNewFile returns true if file is new");
     File file = new File(temp.toString(), getFileName());
-    assertThat(file.createNewFile(), is(equalTo(true)));
+    assertThat(file.createNewFile(), is(true));
   }
 
   @Test(groups = "positive")
@@ -52,7 +52,7 @@ public class CreateNewFileTests {
     System.out.println("createNewFile should create new file");
     File file = new File(temp.toString(), getFileName());
     file.createNewFile();
-    assertThat(file.exists(), is(equalTo(true)));
+    assertThat(file.exists(), is(true));
   }
 
   @Test(groups = "positive")
@@ -60,17 +60,17 @@ public class CreateNewFileTests {
     System.out.println("createNewFile creates an empty file");
     File file = new File(temp.toString(), getFileName());
     file.createNewFile();
-    assertThat(file.length(), is(equalTo(0L)));
+    assertThat(file.length(), is(0L));
   }
 
   @Test(groups = "positive")
   public void testCreatesNewFileSoft() throws IOException {
-    SoftAssert assrt = new SoftAssert();
+    SoftHamcrestAssert h = new SoftHamcrestAssert();
     System.out.println("Soft: createNewFile creates an empty file");
     File file = new File(temp.toString(), getFileName());
-    assrt.assertTrue(file.createNewFile());
-    assrt.assertEquals(file.length(), 0);
-    assrt.assertAll();
+    h.assertThat(file.createNewFile(), is(true));
+    h.assertThat(file.length(), is(0L));
+    h.assertAll();
   }
 
   @Test(groups = "negative")
@@ -80,7 +80,7 @@ public class CreateNewFileTests {
     File file = new File(temp.toString(), f_name);
     file.createNewFile();
     File file2 = new File(temp.toString(), f_name);
-    assertThat(file2.createNewFile(), is(equalTo(false)));
+    assertThat(file2.createNewFile(), is(false));
   }
 
   @Test(groups = "negative", expectedExceptions = IOException.class)
