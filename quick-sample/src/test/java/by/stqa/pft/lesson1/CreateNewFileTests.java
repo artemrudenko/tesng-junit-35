@@ -5,12 +5,14 @@ import static org.hamcrest.MatcherAssert.assertThat;
 
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-import java.io.File;
-import java.io.IOException;
+import java.io.*;
 import java.nio.file.Files;
 import java.nio.file.Path;
+import java.util.*;
+import java.util.stream.Collectors;
 
 /**
  * Created by artemr on 1/30/2017.
@@ -38,20 +40,20 @@ public class CreateNewFileTests {
     throw new Error("Something wrong!");
   }
 
-  @Test(groups = "positive")
-  public void testCallCreatesFileAndReturnsTrue() throws IOException {
+  @Test(groups = "positive", dataProvider = "loadFilenamesFromFile")
+  public void testCallCreatesFileAndReturnsTrue(String name) throws IOException {
     SoftHamcrestAssert h = new SoftHamcrestAssert();
     System.out.println("createNewFile creates file and returns true if file is new");
-    File file = new File(temp.toString(), getFileName());
+    File file = new File(temp.toString(), name);
     h.assertThat(file.createNewFile(), is(true));
     h.assertThat(file.exists(), is(true));
     h.assertAll();
   }
 
-  @Test(groups = "positive")
-  public void testCreatesEmptyFile() throws IOException {
+  @Test(groups = "positive", dataProvider = "getFilename")
+  public void testCreatesEmptyFile(String name) throws IOException {
     System.out.println("createNewFile creates an empty file");
-    File file = new File(temp.toString(), getFileName());
+    File file = new File(temp.toString(), name);
     file.createNewFile();
     assertThat(file.length(), is(0L));
   }
@@ -106,5 +108,38 @@ public class CreateNewFileTests {
   }
   private String getFileName(){
     return String.format("sample_%s.txt", System.currentTimeMillis());
+  }
+
+  @DataProvider
+  public Iterator<Object[]> loadFilenamesFromFile() throws IOException {
+    try(BufferedReader reader = new BufferedReader(
+            new InputStreamReader(CreateNewFileTests.class.getResourceAsStream("/filenames.data")))) {
+      String line = reader.readLine();
+      List<Object[]> filenames = new ArrayList<Object[]>();
+      while (line != null) {
+        filenames.add(new Object[]{line});
+        line = reader.readLine();
+      }
+      return filenames.iterator();
+    }
+  }
+
+  public String getRandomValueFromList(List<String> values){
+    Random randomizer = new Random();
+    return values.get(randomizer.nextInt(values.size()));
+  }
+
+  @DataProvider
+  public Iterator<Object[]> getFilename(){
+    List<String> ext = Arrays.asList("doc", "ini", "data", "config", "txt");
+    List<Object[]> data = new ArrayList<Object[]>();
+    for(int i=0; i < 5; i++){
+      data.add(new Object[]{String.format("%s.%s", generateRandomName(), getRandomValueFromList(ext))});
+    }
+    return data.iterator();
+  }
+
+  private String generateRandomName() {
+    return "Sample" + new Random().nextInt();
   }
 }

@@ -2,60 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="241a80f6-6454-460d-9de4-2c2ecec86487" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__cglib_cglib_nodep_3_2_4.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_codeborne_phantomjsdriver_1_3_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__commons_io_commons_io_2_5.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__net_sourceforge_htmlunit_htmlunit_2_23.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_eclipse_jetty_jetty_io_9_2_18_v20160721.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_eclipse_jetty_jetty_util_9_2_18_v20160721.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_eclipse_jetty_websocket_websocket_api_9_2_18_v20160721.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_eclipse_jetty_websocket_websocket_client_9_2_18_v20160721.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_eclipse_jetty_websocket_websocket_common_9_2_18_v20160721.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_seleniumhq_selenium_selenium_api_3_0_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_seleniumhq_selenium_selenium_chrome_driver_3_0_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_seleniumhq_selenium_selenium_firefox_driver_3_0_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_seleniumhq_selenium_selenium_java_3_0_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_seleniumhq_selenium_selenium_opera_driver_3_0_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_seleniumhq_selenium_selenium_remote_driver_3_0_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_seleniumhq_selenium_selenium_safari_driver_3_0_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/by/stqa/pft/quick/DataProviders.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/by/stqa/pft/quick/ParametrizedTests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/resources/testng-browsers.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/resources/user.data" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__cglib_cglib_nodep_2_1_3.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__commons_collections_commons_collections_3_2_2.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__commons_io_commons_io_2_4.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__net_sourceforge_htmlunit_htmlunit_2_21.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_eclipse_jetty_jetty_io_9_2_15_v20160210.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_eclipse_jetty_jetty_util_9_2_15_v20160210.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_eclipse_jetty_websocket_websocket_api_9_2_15_v20160210.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_eclipse_jetty_websocket_websocket_client_9_2_15_v20160210.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_eclipse_jetty_websocket_websocket_common_9_2_15_v20160210.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_seleniumhq_selenium_htmlunit_driver_2_21.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_seleniumhq_selenium_selenium_api_2_53_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_seleniumhq_selenium_selenium_chrome_driver_2_53_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_seleniumhq_selenium_selenium_firefox_driver_2_53_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_seleniumhq_selenium_selenium_java_2_53_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_seleniumhq_selenium_selenium_leg_rc_2_53_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_seleniumhq_selenium_selenium_remote_driver_2_53_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_seleniumhq_selenium_selenium_safari_driver_2_53_1.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules/quick-sample_main.iml" afterPath="$PROJECT_DIR$/.idea/modules/quick-sample_main.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules/quick-sample_test.iml" afterPath="$PROJECT_DIR$/.idea/modules/quick-sample_test.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/resources/filenames.data" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/by/stqa/pft/lesson1/CreateNewFileTests.java" afterPath="$PROJECT_DIR$/src/test/java/by/stqa/pft/lesson1/CreateNewFileTests.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/by/stqa/pft/quick/SeleniumAssertion.java" afterPath="$PROJECT_DIR$/src/test/java/by/stqa/pft/quick/SeleniumAssertion.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/by/stqa/pft/quick/SeleniumAssertionTest.java" afterPath="$PROJECT_DIR$/src/test/java/by/stqa/pft/quick/SeleniumAssertionTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/by/stqa/pft/quick/SeleniumTestBase.java" afterPath="$PROJECT_DIR$/src/test/java/by/stqa/pft/quick/SeleniumTestBase.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__net_sourceforge_cssparser_cssparser_0_9_18.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__net_sourceforge_cssparser_cssparser_0_9_20.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__net_sourceforge_htmlunit_htmlunit_core_js_2_17.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__net_sourceforge_htmlunit_htmlunit_core_js_2_23.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__net_sourceforge_htmlunit_neko_htmlunit_2_21.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__net_sourceforge_htmlunit_neko_htmlunit_2_23.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_seleniumhq_selenium_selenium_edge_driver_2_53_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_seleniumhq_selenium_selenium_edge_driver_3_0_1.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_seleniumhq_selenium_selenium_ie_driver_2_53_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_seleniumhq_selenium_selenium_ie_driver_3_0_1.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_seleniumhq_selenium_selenium_support_2_53_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_seleniumhq_selenium_selenium_support_3_0_1.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -91,14 +40,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="CreateNewFileTests.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="CreateNewFileTests.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/by/stqa/pft/lesson1/CreateNewFileTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="61">
-              <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+            <state relative-caret-position="83">
+              <caret line="136" column="29" lean-forward="false" selection-start-line="136" selection-start-column="28" selection-end-line="136" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#4088#4098#0" expanded="true" />
+                <element signature="e#4599#4609#0" expanded="true" />
+                <element signature="e#4825#4826#0" expanded="true" />
+                <element signature="e#4875#4876#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="filenames.data" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/resources/filenames.data">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="5" lean-forward="false" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="5" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -106,8 +69,8 @@
       <file leaf-file-name="DataProviders.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/by/stqa/pft/quick/DataProviders.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="18" column="32" lean-forward="false" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
+            <state relative-caret-position="163">
+              <caret line="17" column="105" lean-forward="false" selection-start-line="17" selection-start-column="43" selection-end-line="17" selection-end-column="105" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#571#581#0" expanded="true" />
@@ -180,12 +143,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ParametrizedTests.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ParametrizedTests.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/by/stqa/pft/quick/ParametrizedTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="49">
-              <caret line="7" column="22" lean-forward="true" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+            <state relative-caret-position="185">
+              <caret line="30" column="47" lean-forward="true" selection-start-line="30" selection-start-column="24" selection-end-line="30" selection-end-column="47" />
               <folding>
+                <element signature="imports" expanded="true" />
                 <element signature="e#455#456#0" expanded="true" />
                 <element signature="e#506#507#0" expanded="true" />
                 <element signature="e#601#611#0" expanded="true" />
@@ -898,11 +862,13 @@
         <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/src/test/resources/testng-browsers.xml" />
         <option value="$PROJECT_DIR$/src/test/java/by/stqa/pft/quick/SeleniumTestBase.java" />
-        <option value="$PROJECT_DIR$/src/test/java/by/stqa/pft/lesson1/CreateNewFileTests.java" />
         <option value="$PROJECT_DIR$/src/test/java/by/stqa/pft/lesson1/DataProviders.java" />
         <option value="$PROJECT_DIR$/src/test/java/by/stqa/pft/quick/DataProviders.java" />
         <option value="$PROJECT_DIR$/src/test/resources/user.data" />
         <option value="$PROJECT_DIR$/src/test/java/by/stqa/pft/quick/ParametrizedTests.java" />
+        <option value="$PROJECT_DIR$/src/test/java/by/stqa/pft/lesson1/FileDataProviders.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/filenames.data" />
+        <option value="$PROJECT_DIR$/src/test/java/by/stqa/pft/lesson1/CreateNewFileTests.java" />
       </list>
     </option>
   </component>
@@ -1060,105 +1026,14 @@
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="by.stqa.pft.lesson1" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\EDUCATION\TESTNG_JUNIT\quick-sample\src\test\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.ParametrizedTests.test1 (1)">
-    <configuration default="false" name="D:/EDUCATION/TESTNG_JUNIT/quick-sample/src/test/resources/testng-browsers.xml" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="quick-sample_test" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/testng-browsers.xml" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="SUITE" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="ANNOTATION_TYPE" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
-      <envs />
-      <properties />
-      <listeners />
-      <method />
-    </configuration>
-    <configuration default="false" name="SeleniumAssertionTest.testAssertion" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="by.stqa.pft.quick.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="quick-sample_test" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/testng-browsers.xml" />
-      <option name="PACKAGE_NAME" value="by.stqa.pft.quick" />
-      <option name="MAIN_CLASS_NAME" value="by.stqa.pft.quick.SeleniumAssertionTest" />
-      <option name="METHOD_NAME" value="testAssertion" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" value="1" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="ANNOTATION_TYPE" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
-      <envs />
-      <properties />
-      <listeners />
-      <method />
-    </configuration>
-    <configuration default="false" name="ParametrizedTests.test1" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="by.stqa.pft.quick.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="quick-sample_test" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" value="by.stqa.pft.quick" />
-      <option name="MAIN_CLASS_NAME" value="by.stqa.pft.quick.ParametrizedTests" />
-      <option name="METHOD_NAME" value="test1" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="ANNOTATION_TYPE" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
-      <envs />
-      <properties />
-      <listeners />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="TestNG.CreateNewFileTests">
     <configuration default="false" name="ParametrizedTests" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -1208,6 +1083,105 @@
       <option name="METHOD_NAME" value="test1" />
       <option name="GROUP_NAME" />
       <option name="TEST_OBJECT" value="METHOD" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+    <configuration default="false" name="CreateNewFileTests.testCallCreatesFileAndReturnsTrue" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="by.stqa.pft.lesson1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="quick-sample_test" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" value="by.stqa.pft.lesson1" />
+      <option name="MAIN_CLASS_NAME" value="by.stqa.pft.lesson1.CreateNewFileTests" />
+      <option name="METHOD_NAME" value="testCallCreatesFileAndReturnsTrue" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+    <configuration default="false" name="CreateNewFileTests.testCreatesEmptyFile" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="by.stqa.pft.lesson1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="quick-sample_test" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" value="by.stqa.pft.lesson1" />
+      <option name="MAIN_CLASS_NAME" value="by.stqa.pft.lesson1.CreateNewFileTests" />
+      <option name="METHOD_NAME" value="testCreatesEmptyFile" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+    <configuration default="false" name="CreateNewFileTests" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="by.stqa.pft.lesson1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="quick-sample_test" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" value="by.stqa.pft.lesson1" />
+      <option name="MAIN_CLASS_NAME" value="by.stqa.pft.lesson1.CreateNewFileTests" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
@@ -1587,19 +1561,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="TestNG.D:/EDUCATION/TESTNG_JUNIT/quick-sample/src/test/resources/testng-browsers.xml" />
-      <item index="1" class="java.lang.String" itemvalue="TestNG.SeleniumAssertionTest.testAssertion" />
-      <item index="2" class="java.lang.String" itemvalue="TestNG.ParametrizedTests.test1" />
-      <item index="3" class="java.lang.String" itemvalue="TestNG.ParametrizedTests" />
-      <item index="4" class="java.lang.String" itemvalue="TestNG.ParametrizedTests.test1 (1)" />
+      <item index="0" class="java.lang.String" itemvalue="TestNG.ParametrizedTests" />
+      <item index="1" class="java.lang.String" itemvalue="TestNG.ParametrizedTests.test1 (1)" />
+      <item index="2" class="java.lang.String" itemvalue="TestNG.CreateNewFileTests.testCallCreatesFileAndReturnsTrue" />
+      <item index="3" class="java.lang.String" itemvalue="TestNG.CreateNewFileTests.testCreatesEmptyFile" />
+      <item index="4" class="java.lang.String" itemvalue="TestNG.CreateNewFileTests" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="TestNG.ParametrizedTests.test1 (1)" />
-        <item index="1" class="java.lang.String" itemvalue="TestNG.ParametrizedTests" />
-        <item index="2" class="java.lang.String" itemvalue="TestNG.ParametrizedTests.test1" />
-        <item index="3" class="java.lang.String" itemvalue="TestNG.D:/EDUCATION/TESTNG_JUNIT/quick-sample/src/test/resources/testng-browsers.xml" />
-        <item index="4" class="java.lang.String" itemvalue="TestNG.SeleniumAssertionTest.testAssertion" />
+        <item index="0" class="java.lang.String" itemvalue="TestNG.CreateNewFileTests" />
+        <item index="1" class="java.lang.String" itemvalue="TestNG.CreateNewFileTests.testCreatesEmptyFile" />
+        <item index="2" class="java.lang.String" itemvalue="TestNG.CreateNewFileTests.testCallCreatesFileAndReturnsTrue" />
+        <item index="3" class="java.lang.String" itemvalue="TestNG.ParametrizedTests.test1 (1)" />
+        <item index="4" class="java.lang.String" itemvalue="TestNG.ParametrizedTests" />
       </list>
     </recent_temporary>
   </component>
@@ -1620,14 +1594,14 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="D__EDUCATION_TESTNG_JUNIT_quick-sample_src_test_resources_testng-browsers_xml - 2017.02.01 at 09h 19m 00s.xml">
-      <configuration name="D:/EDUCATION/TESTNG_JUNIT/quick-sample/src/test/resources/testng-browsers.xml" configurationId="TestNG" />
+    <history-entry file="CreateNewFileTests - 2017.02.01 at 11h 28m 24s.xml">
+      <configuration name="CreateNewFileTests" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="D__EDUCATION_TESTNG_JUNIT_quick-sample_src_test_resources_testng-browsers_xml - 2017.02.01 at 09h 20m 53s.xml">
-      <configuration name="D:/EDUCATION/TESTNG_JUNIT/quick-sample/src/test/resources/testng-browsers.xml" configurationId="TestNG" />
+    <history-entry file="CreateNewFileTests_testCallCreatesFileAndReturnsTrue - 2017.02.01 at 10h 24m 39s.xml">
+      <configuration name="CreateNewFileTests.testCallCreatesFileAndReturnsTrue" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="D__EDUCATION_TESTNG_JUNIT_quick-sample_src_test_resources_testng-browsers_xml - 2017.02.01 at 09h 21m 14s.xml">
-      <configuration name="D:/EDUCATION/TESTNG_JUNIT/quick-sample/src/test/resources/testng-browsers.xml" configurationId="TestNG" />
+    <history-entry file="CreateNewFileTests_testCreatesEmptyFile - 2017.02.01 at 11h 25m 28s.xml">
+      <configuration name="CreateNewFileTests.testCreatesEmptyFile" configurationId="TestNG" />
     </history-entry>
     <history-entry file="D__EDUCATION_TESTNG_JUNIT_quick-sample_src_test_resources_testng-browsers_xml - 2017.02.01 at 09h 22m 20s.xml">
       <configuration name="D:/EDUCATION/TESTNG_JUNIT/quick-sample/src/test/resources/testng-browsers.xml" configurationId="TestNG" />
@@ -1707,6 +1681,10 @@
           <caret line="52" column="28" lean-forward="false" selection-start-line="52" selection-start-column="28" selection-end-line="52" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#4088#4098#0" expanded="true" />
+            <element signature="e#4599#4609#0" expanded="true" />
+            <element signature="e#4825#4826#0" expanded="true" />
+            <element signature="e#4875#4876#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1795,6 +1773,10 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#4088#4098#0" expanded="true" />
+            <element signature="e#4599#4609#0" expanded="true" />
+            <element signature="e#4825#4826#0" expanded="true" />
+            <element signature="e#4875#4876#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1957,27 +1939,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/by/stqa/pft/lesson1/CreateNewFileTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="61">
-          <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/by/stqa/pft/quick/DataProviders.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="18" column="32" lean-forward="false" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#571#581#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/testng-parameters.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="680">
@@ -1994,11 +1955,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/by/stqa/pft/lesson1/FileDataProviders.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="18" column="24" lean-forward="false" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/by/stqa/pft/quick/DataProviders.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="163">
+          <caret line="17" column="105" lean-forward="false" selection-start-line="17" selection-start-column="43" selection-end-line="17" selection-end-column="105" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#571#581#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/by/stqa/pft/quick/ParametrizedTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="49">
-          <caret line="7" column="22" lean-forward="true" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+        <state relative-caret-position="185">
+          <caret line="30" column="47" lean-forward="true" selection-start-line="30" selection-start-column="24" selection-end-line="30" selection-end-column="47" />
           <folding>
+            <element signature="imports" expanded="true" />
             <element signature="e#455#456#0" expanded="true" />
             <element signature="e#506#507#0" expanded="true" />
             <element signature="e#601#611#0" expanded="true" />
@@ -2006,6 +1987,28 @@
             <element signature="e#855#856#0" expanded="true" />
             <element signature="e#896#897#0" expanded="true" />
             <element signature="e#944#945#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/filenames.data">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="5" lean-forward="false" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/by/stqa/pft/lesson1/CreateNewFileTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="83">
+          <caret line="136" column="29" lean-forward="false" selection-start-line="136" selection-start-column="28" selection-end-line="136" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#4088#4098#0" expanded="true" />
+            <element signature="e#4599#4609#0" expanded="true" />
+            <element signature="e#4825#4826#0" expanded="true" />
+            <element signature="e#4875#4876#0" expanded="true" />
           </folding>
         </state>
       </provider>
