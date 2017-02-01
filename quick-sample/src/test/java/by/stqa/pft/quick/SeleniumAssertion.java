@@ -7,15 +7,17 @@ import org.openqa.selenium.WebElement;
 import org.testng.asserts.Assertion;
 import org.testng.asserts.IAssert;
 
+import java.util.concurrent.TimeUnit;
+
 /**
  * Created by artemr on 1/31/2017.
  */
 public class SeleniumAssertion extends Assertion{
-  private final WebDriver driver;
-
+  protected static WebDriver driver;
   public SeleniumAssertion(WebDriver driver) {
     super();
     this.driver = driver;
+    this.driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
   }
 
   abstract private class SeleniumAssert implements IAssert{

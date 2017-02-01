@@ -7,7 +7,7 @@ repositories {
 }
 dependencies {
     compile group: 'org.testng', name: 'testng', version:'6.10'
-    compile 'org.seleniumhq.selenium:selenium-java:2.53.1'
+    compile 'org.seleniumhq.selenium:selenium-java:3.0.1'
     compile group: 'ru.stqa.selenium', name: 'webdriver-factory', version:'3.0'
     compile 'org.hamcrest:java-hamcrest:2.0.0.0'
 }

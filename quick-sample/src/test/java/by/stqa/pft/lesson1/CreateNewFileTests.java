@@ -2,12 +2,10 @@ package by.stqa.pft.lesson1;
 
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.MatcherAssert.assertThat;
-import static org.hamcrest.Matchers.equalTo;
 
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-import org.testng.asserts.SoftAssert;
 
 import java.io.File;
 import java.io.IOException;
@@ -41,18 +39,13 @@ public class CreateNewFileTests {
   }
 
   @Test(groups = "positive")
-  public void testCallReturnsTrue() throws IOException {
-    System.out.println("createNewFile returns true if file is new");
+  public void testCallCreatesFileAndReturnsTrue() throws IOException {
+    SoftHamcrestAssert h = new SoftHamcrestAssert();
+    System.out.println("createNewFile creates file and returns true if file is new");
     File file = new File(temp.toString(), getFileName());
-    assertThat(file.createNewFile(), is(true));
-  }
-
-  @Test(groups = "positive")
-  public void testCallCreatesFile() throws IOException {
-    System.out.println("createNewFile should create new file");
-    File file = new File(temp.toString(), getFileName());
-    file.createNewFile();
-    assertThat(file.exists(), is(true));
+    h.assertThat(file.createNewFile(), is(true));
+    h.assertThat(file.exists(), is(true));
+    h.assertAll();
   }
 
   @Test(groups = "positive")

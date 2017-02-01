@@ -11,9 +11,7 @@ public class SeleniumAssertionTest extends SeleniumTestBase{
   public void testAssertion(){
     SeleniumAssertion check = new SeleniumAssertion(driver);
     driver.get("http://selenium2.ru");
-    check.asserPresentElementLocated(By.id("jsn-menu"));
-    check.assertDisplayed(driver.findElement(By.id("jsn-menu")));
+    check.asserPresentElementLocated(By.id("jsn-header"));
+    check.assertDisplayed(driver.findElement(By.id("jsn-header")));
   }
-
-
 }
