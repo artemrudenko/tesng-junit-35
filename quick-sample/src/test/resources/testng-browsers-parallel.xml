@@ -1,0 +1,22 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="BrowserParams" verbose="1" parallel="tests" thread-count="10">
+  <test name="ChromeTest" parallel="classes">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="by.stqa.pft.quick.SeleniumAssertionTest"/>
+    </classes>
+  </test>
+  <test name="FFTest" parallel="classes">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="by.stqa.pft.quick.SeleniumAssertionTest"/>
+    </classes>
+  </test>
+  <test name="FFTest2" parallel="classes">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="by.stqa.pft.quick.SeleniumAssertionTest"/>
+    </classes>
+  </test>
+</suite>

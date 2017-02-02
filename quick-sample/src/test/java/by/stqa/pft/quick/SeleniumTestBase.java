@@ -12,7 +12,7 @@ import org.testng.annotations.*;
 public class SeleniumTestBase {
   protected WebDriver driver;
 
-  @BeforeTest(alwaysRun = true)
+  @BeforeClass(alwaysRun = true)
   @Parameters("browser")
   public void startBrowser(@Optional String browser) {
     if (browser.equals("chrome")) {
@@ -26,7 +26,7 @@ public class SeleniumTestBase {
     }
   }
 
-  @AfterTest(alwaysRun = true)
+  @AfterClass(alwaysRun = true)
   public void stopBrowser() {
     if (driver != null) {
       driver.quit();
