@@ -9,6 +9,8 @@ dependencies {
     compile group: 'junit', name: 'junit', version: '4.12'
     compile 'org.hamcrest:java-hamcrest:2.0.0.0'
     compile 'org.assertj:assertj-core:3.6.2'
+    compile 'com.tngtech.java:junit-dataprovider:1.12.0'
+    compile 'pl.pragmatists:JUnitParams:1.0.6'
     compile(group: 'ru.stqa.selenium', name: 'webdriver-factory', version: '3.0') {
         exclude(module: 'testng')
     }
