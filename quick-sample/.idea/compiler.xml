@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="junit-home" />
+      </profile>
+    </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="junit-home" target="1.6" />
       <module name="quick-sample-junit_main" target="1.8" />
       <module name="quick-sample-junit_test" target="1.8" />
       <module name="quick-sample_main" target="1.8" />

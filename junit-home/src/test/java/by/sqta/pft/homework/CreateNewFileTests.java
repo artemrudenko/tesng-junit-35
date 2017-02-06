@@ -14,7 +14,6 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStreamReader;
-//import java.nio.file.Files;
 import java.util.*;
 
 import static org.hamcrest.CoreMatchers.is;
@@ -97,20 +96,6 @@ public class CreateNewFileTests {
     file.createNewFile();
   }
 
-//  public static boolean deleteDirectory(File dir) {
-//    if (dir.isDirectory()) {
-//      File[] children = dir.listFiles();
-//      if(children != null){
-//        for (int i = 0; i < children.length; i++) {
-//          boolean success = deleteDirectory(children[i]);
-//          if (!success) {
-//            return false;
-//          }
-//        }
-//      }
-//    }
-//    return dir.delete();
-//  }
   private static String getFileName(){
     return String.format("sample_%s.txt", System.currentTimeMillis());
   }
