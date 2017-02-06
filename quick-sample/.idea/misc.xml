@@ -69,6 +69,7 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/junit-home/pom.xml" />
+        <option value="$PROJECT_DIR$/../junit-home/pom.xml" />
       </list>
     </option>
   </component>
