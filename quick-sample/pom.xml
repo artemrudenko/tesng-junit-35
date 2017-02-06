@@ -18,10 +18,10 @@
       <version>3.0.1</version>
     </dependency>
     <dependency>
-      <groupId>ru.stqa.selenium</groupId>
-      <artifactId>webdriver-factory</artifactId>
-      <version>3.0</version>
-    </dependency>
+    <groupId>ru.stqa.selenium</groupId>
+    <artifactId>webdriver-factory</artifactId>
+    <version>3.0</version>
+  </dependency>
     <dependency>
       <groupId>org.hamcrest</groupId>
       <artifactId>java-hamcrest</artifactId>

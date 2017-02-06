@@ -1,22 +1,15 @@
 apply plugin: 'java'
 apply plugin: 'maven'
 
-group = 'by.stqa.pft.quick'
-version = '1.0.0'
-
-description = """"""
-
-sourceCompatibility = 1.8
-targetCompatibility = 1.8
-
-
 repositories {
-        
-     maven { url "http://repo.maven.apache.org/maven2" }
+    maven { url "http://repo.maven.apache.org/maven2" }
 }
+
 dependencies {
-    compile group: 'junit', name: 'junit', version:'4.12'
-    compile(group: 'ru.stqa.selenium', name: 'webdriver-factory', version:'3.0') {
-exclude(module: 'testng')
+    compile group: 'junit', name: 'junit', version: '4.12'
+    compile 'org.hamcrest:java-hamcrest:2.0.0.0'
+    compile 'org.assertj:assertj-core:3.6.2'
+    compile(group: 'ru.stqa.selenium', name: 'webdriver-factory', version: '3.0') {
+        exclude(module: 'testng')
     }
 }
