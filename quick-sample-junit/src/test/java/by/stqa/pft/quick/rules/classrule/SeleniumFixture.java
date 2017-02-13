@@ -1,4 +1,4 @@
-package by.stqa.pft.quick.rules;
+package by.stqa.pft.quick.rules.classrule;
 
 import com.google.common.io.Files;
 import org.junit.Assert;
@@ -19,7 +19,7 @@ import static org.hamcrest.CoreMatchers.is;
 /**
  * Created by artemr on 2/6/2017.
  */
-public class SeleniumClassFixture {
+public class SeleniumFixture {
   protected static WebDriver driver;
 
   @ClassRule

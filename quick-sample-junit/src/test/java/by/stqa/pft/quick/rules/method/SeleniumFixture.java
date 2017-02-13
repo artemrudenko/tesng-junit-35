@@ -1,4 +1,4 @@
-package by.stqa.pft.quick.rules;
+package by.stqa.pft.quick.rules.method;
 
 import org.junit.Rule;
 import org.junit.rules.ExternalResource;
@@ -8,7 +8,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 /**
  * Created by artemr on 2/6/2017.
  */
-public class SeleniumMethodFixture {
+public class SeleniumFixture {
   protected WebDriver driver;
 
   @Rule
