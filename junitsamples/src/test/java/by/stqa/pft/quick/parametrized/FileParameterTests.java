@@ -18,11 +18,13 @@ import java.util.List;
  */
 @RunWith(DataProviderRunner.class)
 public class FileParameterTests {
+
   @Test
   @UseDataProvider("users")
   public void test1(String user, String password){
     System.out.println(user + " : " + password);
   }
+
   @DataProvider
   public static Object[][] users() throws IOException {
     BufferedReader in = new BufferedReader(new InputStreamReader(

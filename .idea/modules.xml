@@ -4,11 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/junit-home/junit-home.iml" filepath="$PROJECT_DIR$/junit-home/junit-home.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/junitsamples.iml" filepath="$PROJECT_DIR$/.idea/modules/junitsamples.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/junitsamples_main.iml" filepath="$PROJECT_DIR$/.idea/modules/junitsamples_main.iml" group="junitsamples" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/junitsamples_test.iml" filepath="$PROJECT_DIR$/.idea/modules/junitsamples_test.iml" group="junitsamples" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/testngsamples.iml" filepath="$PROJECT_DIR$/.idea/modules/testngsamples.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/testngsamples_main.iml" filepath="$PROJECT_DIR$/.idea/modules/testngsamples_main.iml" group="testngsamples" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/testngsamples_test.iml" filepath="$PROJECT_DIR$/.idea/modules/testngsamples_test.iml" group="testngsamples" />
     </modules>
   </component>
 </project>

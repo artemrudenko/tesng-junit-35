@@ -43,7 +43,7 @@ public class RerunRule implements TestRule {
             System.out.println("Failed on " + (overall - attempt) + " attempt: " + description);
             attempt--;
             if (attempt <= 0) {
-              throw t;
+              throw new Error(t);
             }
           }
         }
