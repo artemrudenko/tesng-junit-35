@@ -1,8 +1,7 @@
-package by.sqta.pft.homework;
+package by.sqta.pft.homework.wfixtureclass;
 
 import org.junit.Rule;
 import org.junit.rules.ExternalResource;
-import org.junit.rules.TestRule;
 
 import java.io.File;
 import java.nio.file.Files;

@@ -1,5 +1,6 @@
-package by.sqta.pft.homework;
+package by.sqta.pft.homework.wfixtureclass;
 
+import by.sqta.pft.homework.TCategories;
 import org.junit.experimental.categories.Categories;
 import org.junit.experimental.categories.Categories.IncludeCategory;
 import org.junit.runner.RunWith;

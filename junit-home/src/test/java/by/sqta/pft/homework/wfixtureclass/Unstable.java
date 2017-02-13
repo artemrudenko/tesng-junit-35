@@ -1,4 +1,4 @@
-package by.sqta.pft.homework;
+package by.sqta.pft.homework.wfixtureclass;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
@@ -11,5 +11,5 @@ import java.lang.annotation.Target;
 @Target(ElementType.METHOD)
 @Retention(RetentionPolicy.RUNTIME)
 public @interface Unstable {
-  int amount() default 0;
+  int value() default 0;
 }

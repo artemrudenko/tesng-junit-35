@@ -55,10 +55,9 @@
         <configuration>
           <includes>
             <include>**/NotBrokenSuite.java</include>
+            <!--<include>**/wfixturerule/NotBrokenSuite.java</include>-->
+            <!--<include>**/wfixtureclass/NotBrokenSuite.java</include>-->
           </includes>
-          <!--<suiteXmlFiles>
-            <suiteXmlFile>testng.xml</suiteXmlFile>
-          </suiteXmlFiles>-->
         </configuration>
       </plugin>
       <plugin>
