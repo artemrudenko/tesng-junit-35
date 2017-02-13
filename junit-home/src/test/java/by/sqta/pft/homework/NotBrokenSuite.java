@@ -9,6 +9,6 @@ import org.junit.runners.Suite.SuiteClasses;
  */
 @RunWith(org.junit.experimental.categories.Categories.class)
 @SuiteClasses(CreateNewFileTests.class)
-@ExcludeCategory(by.sqta.pft.homework.Categories.BrokenTests.class)
+@ExcludeCategory(TCategories.BrokenTests.class)
 public class NotBrokenSuite {
 }

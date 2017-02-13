@@ -28,7 +28,8 @@ public class CreateNewFileTests {
   public TemporaryFolder tmpdir = new TemporaryFolder();
 
   @Test
-  @Category({Categories.PositiveTests.class, Categories.BrokenTests.class})
+  @Category({TCategories.PositiveTests.class, TCategories.BrokenTests.class})
+  @Unstable(amount = 4)
   public void testPositiveBroken() throws IOException {
     System.out.println("createNewFile positive and broken(to be skipped)");
     File file = new File(tmpdir.getRoot().toString(), getFileName());
@@ -37,7 +38,7 @@ public class CreateNewFileTests {
   }
 
   @Test
-  @Category(Categories.PositiveTests.class)
+  @Category(TCategories.PositiveTests.class)
   @UseDataProvider("filenames")
   public void testCallCreatesFileAndReturnsTrue(String name) throws IOException {
     SoftAssertions s = new SoftAssertions();
@@ -49,7 +50,7 @@ public class CreateNewFileTests {
   }
 
   @Test
-  @Category(Categories.PositiveTests.class)
+  @Category(TCategories.PositiveTests.class)
   @UseDataProvider("generateFilenames")
   public void testCreatesEmptyFile(String name) throws IOException {
     System.out.println("createNewFile creates an empty file");
@@ -59,7 +60,7 @@ public class CreateNewFileTests {
   }
 
   @Test
-  @Category(Categories.PositiveTests.class)
+  @Category(TCategories.PositiveTests.class)
   public void testCreatesNewFileSoft() throws IOException {
     SoftAssertions s = new SoftAssertions();
     System.out.println("Soft: createNewFile creates an empty file");
@@ -70,7 +71,7 @@ public class CreateNewFileTests {
   }
 
   @Test
-  @Category(Categories.NegativeTests.class)
+  @Category(TCategories.NegativeTests.class)
   public void testCallReturnsFalseIfExists() throws IOException {
     System.out.println("createNewFile returns false if file isn't new");
     String f_name = getFileName();
@@ -81,7 +82,7 @@ public class CreateNewFileTests {
   }
 
   @Test(expected = IOException.class)
-  @Category(Categories.NegativeTests.class)
+  @Category(TCategories.NegativeTests.class)
   public void testRaisesIOExceptionIfPathWrong() throws IOException {
     System.out.println("createNewFile raises IOException if path is wrong");
     File file = new File(tmpdir.getRoot().toString(), "12314//\\\\*.txt");
@@ -89,7 +90,7 @@ public class CreateNewFileTests {
   }
 
   @Test
-  @Category({Categories.NegativeTests.class, Categories.BrokenTests.class})
+  @Category({TCategories.NegativeTests.class, TCategories.BrokenTests.class})
   public void testNegativeBroken() throws IOException {
     System.out.println("createNewFile negative and broken(to be skipped)");
     File file = new File(tmpdir.getRoot().toString(), "12314//\\\\*.txt");

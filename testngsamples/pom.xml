@@ -1,32 +1,31 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
+  <groupId>by.stqa.pft.testngjunit</groupId>
+  <artifactId>testngsamples</artifactId>
+  <version>1.0.0</version>
+  <packaging>jar</packaging>
 
-  <groupId>by.sqta.pft.testngjunit</groupId>
-  <artifactId>junit-home</artifactId>
-  <version>1.0-SNAPSHOT</version>
   <dependencies>
     <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>4.12</version>
+        <groupId>org.testng</groupId>
+        <artifactId>testng</artifactId>
+        <version>6.10</version>
     </dependency>
+    <dependency>
+      <groupId>org.seleniumhq.selenium</groupId>
+      <artifactId>selenium-java</artifactId>
+      <version>3.0.1</version>
+    </dependency>
+    <dependency>
+    <groupId>ru.stqa.selenium</groupId>
+    <artifactId>webdriver-factory</artifactId>
+    <version>3.0</version>
+  </dependency>
     <dependency>
       <groupId>org.hamcrest</groupId>
       <artifactId>java-hamcrest</artifactId>
       <version>2.0.0.0</version>
-    </dependency>
-    <dependency>
-      <groupId>org.assertj</groupId>
-      <artifactId>assertj-core</artifactId>
-      <version>3.6.2</version>
-    </dependency>
-    <dependency>
-      <groupId>com.tngtech.java</groupId>
-      <artifactId>junit-dataprovider</artifactId>
-      <version>1.12.0</version>
     </dependency>
   </dependencies>
   <build>
@@ -35,30 +34,23 @@
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-resources-plugin</artifactId>
         <version>3.0.2</version>
-        <configuration>
-          <encoding>UTF-8</encoding>
-        </configuration>
       </plugin>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
         <version>3.6.1</version>
-        <configuration>
-          <source>1.8</source>
-          <target>1.8</target>
-        </configuration>
       </plugin>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-surefire-plugin</artifactId>
         <version>2.19.1</version>
         <configuration>
-          <includes>
-            <include>**/NotBrokenSuite.java</include>
-          </includes>
-          <!--<suiteXmlFiles>
-            <suiteXmlFile>testng.xml</suiteXmlFile>
-          </suiteXmlFiles>-->
+          <!--<includes>
+            <include>**/*TestSuite.java</include>
+          </includes>-->
+          <suiteXmlFiles>
+            <suiteXmlFile>src/test/resources/testng.xml</suiteXmlFile>
+          </suiteXmlFiles>
         </configuration>
       </plugin>
       <plugin>
@@ -66,7 +58,7 @@
         <artifactId>maven-site-plugin</artifactId>
         <version>3.6</version>
       </plugin>
-    </plugins>
+    </plugins>    
   </build>
   <reporting>
     <plugins>

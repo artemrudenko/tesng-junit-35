@@ -10,7 +10,7 @@ import org.junit.runners.Suite.SuiteClasses;
  */
 @RunWith(Categories.class)
 @SuiteClasses(CreateNewFileTests.class)
-@IncludeCategory(by.sqta.pft.homework.Categories.BrokenTests.class)
+@IncludeCategory(TCategories.BrokenTests.class)
 public class BrokenSuite {
 
 }

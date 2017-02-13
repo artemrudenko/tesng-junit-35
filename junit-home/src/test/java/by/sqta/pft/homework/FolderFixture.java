@@ -2,6 +2,7 @@ package by.sqta.pft.homework;
 
 import org.junit.Rule;
 import org.junit.rules.ExternalResource;
+import org.junit.rules.TestRule;
 
 import java.io.File;
 import java.nio.file.Files;
@@ -12,6 +13,9 @@ import java.nio.file.Path;
  */
 public class FolderFixture {
   protected Path tmpdir;
+
+  @Rule
+  public RerunRule rerunRule = new RerunRule();
 
   @Rule
   public ExternalResource folderRule = new ExternalResource() {
