@@ -1,0 +1,4 @@
+by.stqa.pft.quick.runtimesuitesamples.fileloader.Test2
+by.stqa.pft.quick.runtimesuitesamples.fileloader.Test1
+by.stqa.pft.quick.runtimesuitesamples.fileloader.Test1
+by.stqa.pft.quick.runtimesuitesamples.fileloader.Test2
