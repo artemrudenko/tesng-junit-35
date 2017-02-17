@@ -118,6 +118,7 @@ public class CreateNewFileTests {
     File file = new File(temp.toString(), getFileName());
     file.createNewFile();
     assertThat(file.exists(), is(true));
+    assertThat(file.canRead(), is(true));
   }
 
   public static boolean deleteDirectory(File dir) {
