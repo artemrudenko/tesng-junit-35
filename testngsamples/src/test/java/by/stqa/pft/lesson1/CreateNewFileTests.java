@@ -26,18 +26,14 @@ public class CreateNewFileTests {
   @BeforeMethod
   public void setMode(Method m) {
     System.out.println("Before method " + m.getName());
+    File folder = temp.toFile();
     TempDir annotation = m.getAnnotation(TempDir.class);
     if (annotation != null) {
       System.out.println("Changing mode");
-      File folder = temp.toFile();
-      if(!annotation.read()){
-        folder.setReadable(false);
-      }
-      System.out.println(annotation.write());
-      if(!annotation.write()){
-        folder.setWritable(false);
-      }
+      folder.setReadable(annotation.read(), false);
+      folder.setWritable(annotation.write(), false);
     }
+    System.out.println("Can write " + folder.canWrite());
   }
 
   @AfterClass(alwaysRun = true)
@@ -109,9 +105,19 @@ public class CreateNewFileTests {
   @Test(groups = "negative", expectedExceptions = IOException.class)
   @TempDir(read = true, write = false)
   public void testCannotCreateFileInAReadOnlyDir() throws IOException {
-    System.out.println("createNewFile cannotCreateFileInAReadOnlyDir");
-    File file = new File(temp.toString(), "12314.txt");
+    System.out.println("createNewFile testCannotCreateFileInAReadOnlyDir");
+    File file = new File(temp.toString(), getFileName());
     file.createNewFile();
+    assertThat(file.exists(), is(false));
+  }
+
+  @Test(groups = "negative")
+  @TempDir(read = false, write = true)
+  public void testCreateFileInAWritableOnlyDir() throws IOException {
+    System.out.println("createNewFile testCreateFileInAWritableOnlyDir");
+    File file = new File(temp.toString(), getFileName());
+    file.createNewFile();
+    assertThat(file.exists(), is(true));
   }
 
   public static boolean deleteDirectory(File dir) {
