@@ -3,12 +3,10 @@ package by.stqa.pft.lesson1;
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.MatcherAssert.assertThat;
 
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.DataProvider;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 
 import java.io.*;
+import java.lang.reflect.Method;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.*;
@@ -23,6 +21,23 @@ public class CreateNewFileTests {
   public void init() throws IOException {
     System.out.println("Preparing temp directory...");
     temp = Files.createTempDirectory("TestNGHomeWork_");
+  }
+
+  @BeforeMethod
+  public void setMode(Method m) {
+    System.out.println("Before method " + m.getName());
+    TempDir annotation = m.getAnnotation(TempDir.class);
+    if (annotation != null) {
+      System.out.println("Changing mode");
+      File folder = temp.toFile();
+      if(!annotation.read()){
+        folder.setReadable(false);
+      }
+      System.out.println(annotation.write());
+      if(!annotation.write()){
+        folder.setWritable(false);
+      }
+    }
   }
 
   @AfterClass(alwaysRun = true)
@@ -88,6 +103,14 @@ public class CreateNewFileTests {
   public void testNegativeBroken() throws IOException {
     System.out.println("createNewFile negative and broken(to be skipped)");
     File file = new File(temp.toString(), "12314//\\\\*.txt");
+    file.createNewFile();
+  }
+
+  @Test(groups = "negative", expectedExceptions = IOException.class)
+  @TempDir(read = true, write = false)
+  public void testCannotCreateFileInAReadOnlyDir() throws IOException {
+    System.out.println("createNewFile cannotCreateFileInAReadOnlyDir");
+    File file = new File(temp.toString(), "12314.txt");
     file.createNewFile();
   }
 
