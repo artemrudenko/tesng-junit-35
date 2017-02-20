@@ -16,6 +16,7 @@
     <orderEntry type="library" name="Gradle: com.automation-remarks:video-recorder-testng:1.4" level="project" />
     <orderEntry type="library" name="Gradle: biz.futureware.mantis:mantis-axis-soap-client:1.2.19" level="project" />
     <orderEntry type="library" name="Gradle: com.opencsv:opencsv:3.9" level="project" />
+    <orderEntry type="library" name="Gradle: org.apache.poi:poi:3.16-beta2" level="project" />
     <orderEntry type="library" name="Gradle: com.beust:jcommander:1.48" level="project" />
     <orderEntry type="library" name="Gradle: org.seleniumhq.selenium:selenium-chrome-driver:3.0.1" level="project" />
     <orderEntry type="library" name="Gradle: org.seleniumhq.selenium:selenium-edge-driver:3.0.1" level="project" />
@@ -32,12 +33,13 @@
     <orderEntry type="library" name="Gradle: axis:axis:1.4" level="project" />
     <orderEntry type="library" name="Gradle: org.apache.commons:commons-lang3:3.5" level="project" />
     <orderEntry type="library" name="Gradle: commons-beanutils:commons-beanutils:1.9.3" level="project" />
+    <orderEntry type="library" name="Gradle: commons-codec:commons-codec:1.10" level="project" />
+    <orderEntry type="library" name="Gradle: org.apache.commons:commons-collections4:4.1" level="project" />
     <orderEntry type="library" name="Gradle: org.seleniumhq.selenium:selenium-remote-driver:3.0.1" level="project" />
     <orderEntry type="library" name="Gradle: io.netty:netty:3.5.7.Final" level="project" />
     <orderEntry type="library" name="Gradle: junit:junit:4.12" level="project" />
     <orderEntry type="library" name="Gradle: xalan:xalan:2.7.2" level="project" />
     <orderEntry type="library" name="Gradle: org.apache.httpcomponents:httpmime:4.5.2" level="project" />
-    <orderEntry type="library" name="Gradle: commons-codec:commons-codec:1.10" level="project" />
     <orderEntry type="library" name="Gradle: net.sourceforge.htmlunit:htmlunit-core-js:2.23" level="project" />
     <orderEntry type="library" name="Gradle: net.sourceforge.htmlunit:neko-htmlunit:2.23" level="project" />
     <orderEntry type="library" name="Gradle: net.sourceforge.cssparser:cssparser:0.9.20" level="project" />

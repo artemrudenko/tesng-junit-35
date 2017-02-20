@@ -49,9 +49,12 @@ public class CreateNewFileTests {
     h.assertAll();
   }
 
-  @Test(groups = "positive", dataProvider = "getFilename")
-  public void testCreatesEmptyFile(String name) throws IOException {
-    System.out.println("createNewFile creates an empty file");
+  @Test(groups = "positive", dataProvider = "excelDataProvider",
+        dataProviderClass = ExcelDataProviders.class)
+  @ExcelDataSource(value = "users.xls", sheetname = "positive")
+  public void testCreatesEmptyFile(String name, String description) throws IOException {
+    System.out.println("createNewFile creates an empty file with" + name);
+    System.out.println("Description " + description);
     File file = new File(temp.toString(), name);
     file.createNewFile();
     assertThat(file.length(), is(0L));
@@ -77,10 +80,13 @@ public class CreateNewFileTests {
     assertThat(file2.createNewFile(), is(false));
   }
 
-  @Test(groups = "negative", expectedExceptions = IOException.class)
-  public void testRaisesIOExceptionIfPathWrong() throws IOException {
+  @Test(groups = "negative", dataProvider = "excelDataProvider",
+          dataProviderClass = ExcelDataProviders.class, expectedExceptions = IOException.class)
+  @ExcelDataSource(value = "users.xls", sheetname = "negative")
+  public void testRaisesIOExceptionIfPathWrong(String name, String description) throws IOException {
     System.out.println("createNewFile raises IOException if path is wrong");
-    File file = new File(temp.toString(), "12314//\\\\*.txt");
+    System.out.println("Description " + description);
+    File file = new File(temp.toString(), name);
     file.createNewFile();
   }
 

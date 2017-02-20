@@ -13,6 +13,7 @@ dependencies {
     compile group: 'com.automation-remarks', name: 'video-recorder-testng', version: '1.4'
     compile 'biz.futureware.mantis:mantis-axis-soap-client:1.2.19'
     compile 'com.opencsv:opencsv:3.9'
+    compile 'org.apache.poi:poi:3.16-beta2'
 }
 
 test{

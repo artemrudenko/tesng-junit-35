@@ -1,103 +1,66 @@
-package by.stqa.pft.injections.dataprovider.csv;
+package by.stqa.pft.lesson1;
 
 
-import com.opencsv.CSVReader;
 import org.testng.annotations.DataProvider;
 
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
 import java.lang.reflect.Method;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Iterator;
-import java.util.List;
+import java.net.URL;
+import java.util.*;
 
-public class CsvDataProviders {
+import org.apache.poi.hssf.usermodel.HSSFCell;
+import org.apache.poi.hssf.usermodel.HSSFRow;
+import org.apache.poi.hssf.usermodel.HSSFSheet;
+import org.apache.poi.hssf.usermodel.HSSFWorkbook;
+
+public class ExcelDataProviders {
+
+  private static HSSFWorkbook readFile(String filename) throws IOException {
+    try (FileInputStream fis = new FileInputStream(filename)) {
+      return new HSSFWorkbook(fis);
+    }
+  }
 
   @DataProvider
-  public static Object[][] csvDataProvider(Method m) throws IOException {
-    if (m.isAnnotationPresent(CsvDataSource.class)) {
+  public static Object[][] excelDataProvider(Method m) throws IOException {
+    if (m.isAnnotationPresent(ExcelDataSource.class)) {
       int length = m.getParameterTypes().length;
-      CsvDataSource dataSource = m.getAnnotation(CsvDataSource.class);
-      File csvFile = new File(dataSource.value());
-
+      ExcelDataSource dataSource = m.getAnnotation(ExcelDataSource.class);
       List<Object[]> result = new ArrayList<Object[]>();
-      CSVReader reader = new CSVReader(new FileReader(csvFile));
-      String[] nextLine;
-      while ((nextLine = reader.readNext()) != null) {
-        System.out.println(Arrays.toString(nextLine));
-        Object[] parameters = new Object[length];
-        for (int i = 0; i < length; i++) {
-          if (i < nextLine.length) {
-            parameters[i] = nextLine[i];
-          } else {
-            parameters[i] = null;
-          }
-        }
-        result.add(parameters);
-      }
+      URL url = m.getDeclaringClass().getResource("/" + dataSource.value());
+      HSSFWorkbook wb = ExcelDataProviders.readFile(url.getPath());
+      String sheetname = dataSource.sheetname();
 
+      for (int k = 0; k < wb.getNumberOfSheets(); k++) {
+        HSSFSheet sheet = wb.getSheetAt(k);
+        if(!sheetname.equals("") && !sheet.getSheetName().equals(sheetname)){
+          continue;
+        }
+        int rows = sheet.getPhysicalNumberOfRows();
+//        starting from 1 to skip header row
+        for (int r = 1; r < rows; r++) {
+          HSSFRow row = sheet.getRow(r);
+          if (row == null) {
+            continue;
+          }
+
+          Object[] parameters = new Object[length];
+          for (int c = 0; c < length; c++) {
+            HSSFCell cell = row.getCell(c);
+            if(cell != null) {
+              parameters[c] = cell.getStringCellValue();
+            }else {
+              parameters[c] = null;
+            }
+          }
+          result.add(parameters);
+        }
+      }
+      wb.close();
       return result.toArray(new Object[result.size()][]);
     } else {
       throw new Error("There is no @CsvDataSource annotation on method " + m);
     }
   }
 
-  @DataProvider
-  public static Iterator<Object[]> lazyCsvDataProvider(Method m) throws IOException {
-    if (m.isAnnotationPresent(CsvDataSource.class)) {
-      int length = m.getParameterTypes().length;
-      CsvDataSource dataSource = m.getAnnotation(CsvDataSource.class);
-      File csvFile = new File(dataSource.value());
-      return new CsvFileIterator(csvFile, length);
-    } else {
-      throw new Error("There is no @CsvDataSource annotation on method " + m);
-    }
-  }
-
-  private static class CsvFileIterator implements Iterator<Object[]> {
-
-    private final CSVReader reader;
-    private int length;
-    private String[] nextLine;
-
-    public CsvFileIterator(File csvFile, int length) throws FileNotFoundException {
-      this.length = length;
-      reader = new CSVReader(new FileReader(csvFile));
-    }
-
-    @Override
-    public boolean hasNext() {
-      try {
-        nextLine = reader.readNext();
-        return nextLine != null;
-      } catch (IOException e) {
-        return false;
-      }
-    }
-
-    @Override
-    public Object[] next() {
-      if (nextLine == null) {
-        return null;
-      }
-      System.out.println(Arrays.toString(nextLine));
-      Object[] parameters = new Object[length];
-      for (int i = 0; i < length; i++) {
-        if (i < nextLine.length) {
-          parameters[i] = nextLine[i];
-        } else {
-          parameters[i] = null;
-        }
-      }
-      return parameters;
-    }
-
-    @Override
-    public void remove() {
-      throw new UnsupportedOperationException();
-    }
-  }
 }

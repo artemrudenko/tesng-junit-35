@@ -10,6 +10,7 @@ import java.lang.annotation.Target;
 
 @Target(ElementType.METHOD)
 @Retention(RetentionPolicy.RUNTIME)
-public @interface FromFile {
-  String filename = null;
+public @interface ExcelDataSource {
+  String sheetname() default "";
+  String value();
 }
