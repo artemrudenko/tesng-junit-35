@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module external.linked.project.id="junitsamples:test" external.linked.project.path="$MODULE_DIR$/../../junitsamples" external.root.project.path="$MODULE_DIR$/../../junitsamples" external.system.id="GRADLE" external.system.module.group="" external.system.module.type="sourceSet" external.system.module.version="unspecified" type="JAVA_MODULE" version="4">
-  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8">
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8" inherit-compiler-output="false">
     <output-test url="file://$MODULE_DIR$/../../junitsamples/build/classes/test" />
     <exclude-output />
     <content url="file://$MODULE_DIR$/../../junitsamples/src/test">
@@ -56,15 +56,6 @@
     <orderEntry type="library" name="Gradle: org.eclipse.jetty.websocket:websocket-api:9.2.18.v20160721" level="project" />
     <orderEntry type="library" name="Gradle: net.java.dev.jna:jna:4.1.0" level="project" />
     <orderEntry type="library" name="Gradle: xml-apis:xml-apis:1.4.01" level="project" />
-    <orderEntry type="module-library">
-      <library>
-        <CLASSES>
-          <root url="file://$MODULE_DIR$/../../../TOOLS/runtime-suite/build/main" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
   </component>
   <component name="TestModuleProperties" production-module="junitsamples_main" />
 </module>

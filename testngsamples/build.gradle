@@ -10,6 +10,8 @@ dependencies {
     compile 'org.seleniumhq.selenium:selenium-java:3.0.1'
     compile group: 'ru.stqa.selenium', name: 'webdriver-factory', version:'3.0'
     compile 'org.hamcrest:java-hamcrest:2.0.0.0'
+    compile group: 'com.automation-remarks', name: 'video-recorder-testng', version: '1.4'
+    compile 'biz.futureware.mantis:mantis-axis-soap-client:1.2.19'
 }
 
 test{

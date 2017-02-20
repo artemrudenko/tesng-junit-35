@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: biz.futureware.mantis:mantis-axis-soap-client:1.2.19">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/biz/futureware/mantis/mantis-axis-soap-client/1.2.19/mantis-axis-soap-client-1.2.19.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/biz/futureware/mantis/mantis-axis-soap-client/1.2.19/mantis-axis-soap-client-1.2.19-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/biz/futureware/mantis/mantis-axis-soap-client/1.2.19/mantis-axis-soap-client-1.2.19-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -16,7 +16,7 @@ public class UniversalDataProviders {
   public static Object[][] dataSourceLoader(FrameworkMethod testMethod) throws IOException{
     DataSource ds = testMethod.getAnnotation(DataSource.class);
     if(ds == null){
-      throw new Error("Test method has no @DataSource annotation: " + testMethod.getName());
+      throw new Error("Test method has no @DataSource annotations: " + testMethod.getName());
     }
     switch (ds.type()){
       case RESOURCE:

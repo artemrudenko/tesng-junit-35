@@ -20,7 +20,7 @@ public class UniversalDataProviders {
 
     DataSource ds = testMethod.getAnnotation(DataSource.class);
     if(ds == null){
-      throw new Error("Test method has no @DataSource annotation: " + testMethod.getName());
+      throw new Error("Test method has no @DataSource annotations: " + testMethod.getName());
     }
     switch (ds.type()){
       case RESOURCE:
