@@ -42,7 +42,7 @@ public class CreateNewFileTests {
   @Test(groups = "positive", dataProvider = "loadFilenamesFromFile")
   public void testCallCreatesFileAndReturnsTrue(String name) throws IOException {
     SoftHamcrestAssert h = new SoftHamcrestAssert();
-    System.out.println("createNewFile creates file and returns true if file is new");
+    System.out.println("createNewFile creates file w name " + name + " and returns true if file is new");
     File file = new File(temp.toString(), name);
     h.assertThat(file.createNewFile(), is(true));
     h.assertThat(file.exists(), is(true));
@@ -60,11 +60,13 @@ public class CreateNewFileTests {
     assertThat(file.length(), is(0L));
   }
 
-  @Test(groups = "positive")
-  public void testCreatesNewFileSoft() throws IOException {
+  @Test(groups = "positive", dataProvider = "lazyExcelDataProvider",
+          dataProviderClass = ExcelDataProviders.class)
+  @ExcelDataSource(value = "users.xls", sheetname = "positive")
+  public void testCreatesNewFileSoft(String name) throws IOException {
     SoftHamcrestAssert h = new SoftHamcrestAssert();
-    System.out.println("Soft: createNewFile creates an empty file");
-    File file = new File(temp.toString(), getFileName());
+    System.out.println("Soft: createNewFile creates an empty file with name " + name);
+    File file = new File(temp.toString(), name);
     h.assertThat(file.createNewFile(), is(true));
     h.assertThat(file.length(), is(0L));
     h.assertAll();

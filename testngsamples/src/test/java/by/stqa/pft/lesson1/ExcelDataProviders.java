@@ -47,11 +47,7 @@ public class ExcelDataProviders {
           Object[] parameters = new Object[length];
           for (int c = 0; c < length; c++) {
             HSSFCell cell = row.getCell(c);
-            if(cell != null) {
-              parameters[c] = cell.getStringCellValue();
-            }else {
-              parameters[c] = null;
-            }
+            parameters[c] = (cell != null)? cell.getStringCellValue(): null;
           }
           result.add(parameters);
         }
@@ -63,4 +59,49 @@ public class ExcelDataProviders {
     }
   }
 
+  @DataProvider
+  public static Iterator<Object[]> lazyExcelDataProvider(Method m) throws IOException {
+    if (m.isAnnotationPresent(ExcelDataSource.class)) {
+      int length = m.getParameterTypes().length;
+      ExcelDataSource dataSource = m.getAnnotation(ExcelDataSource.class);
+      URL url = m.getDeclaringClass().getResource("/" + dataSource.value());
+      HSSFWorkbook wb = ExcelDataProviders.readFile(url.getPath());
+      return new ExcelSheetIterator(wb.getSheet(dataSource.sheetname()), length);
+    } else {
+      throw new Error("There is no @ExcelDataSource annotation on method " + m);
+    }
+  }
+
+  private static class ExcelSheetIterator implements Iterator<Object[]> {
+
+    private final HSSFSheet sheet;
+    private int lastRowId = 0;
+    private int length;
+
+    public ExcelSheetIterator(HSSFSheet sheet, int length) throws FileNotFoundException {
+      this.length = length;
+      this.sheet = sheet;
+    }
+
+    @Override
+    public boolean hasNext() {
+      return sheet.getRow(lastRowId+1) != null;
+    }
+
+    @Override
+    public Object[] next() {
+      HSSFRow row = sheet.getRow(++lastRowId);
+      Object[] parameters = new Object[length];
+      for (int c = 0; c < length; c++) {
+        HSSFCell cell = row.getCell(c);
+        parameters[c] = (cell != null)? cell.getStringCellValue(): null;
+      }
+      return parameters;
+    }
+
+    @Override
+    public void remove() {
+      throw new UnsupportedOperationException();
+    }
+  }
 }
